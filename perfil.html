@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyDent | Mi perfil</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="barra-navegacion">
+        <a href="index.html" class="logo">Roy<span>Dent</span></a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="citas.html">Citas</a>
+            <a href="historias.html">Avisos</a>
+            <a href="perfil.html" class="activo">Perfil</a>
+        </nav>
+
+        <div class="usuario">
+            <div class="avatar">R</div>
+            <span>Roy</span>
+        </div>
+    </header>
+
+    <main class="contenido">
+
+        <section class="encabezado-pagina">
+            <p class="saludo-pagina">MI CUENTA</p>
+            <h1>Mi perfil</h1>
+            <p>Consulta y administra tu información personal.</p>
+        </section>
+
+        <section class="perfil-contenedor">
+
+            <div class="perfil-resumen">
+    <div class="perfil-avatar" id="perfilAvatar">P</div>
+    <h2 id="perfilNombreResumen">Paciente</h2>
+    <p>Paciente registrado</p>
+    <span class="estado-perfil">● Cuenta activa</span>
+</div>
+
+            <div class="perfil-formulario">
+                <div class="titulo-panel">
+                    <h2>Información personal</h2>
+                    <p>Mantén tus datos actualizados.</p>
+                </div>
+
+                <form id="formularioPerfil">
+
+                   <div class="campos-formulario">
+
+    <div class="campo">
+        <label for="perfilDocumento">Número de documento</label>
+        <input type="text" id="perfilDocumento"
+               value="1000000001" readonly>
+    </div>
+
+    <div class="campo">
+        <label for="perfilTipoDocumento">Tipo de documento</label>
+        <input type="text" id="perfilTipoDocumento" readonly>
+    </div>
+
+    <div class="campo">
+        <label for="perfilFecha">Fecha de nacimiento</label>
+        <input type="text" id="perfilFecha" readonly>
+    </div>
+
+    <div class="campo">
+        <label for="perfilTelefono">Teléfono</label>
+        <input type="tel" id="perfilTelefono" required>
+    </div>
+
+    <div class="campo campo-completo">
+        <label for="perfilDireccion">Dirección de residencia</label>
+        <input type="text" id="perfilDireccion">
+    </div>
+
+</div>
+
+                    <button type="submit" class="boton-principal">
+                        Guardar cambios
+                    </button>
+
+                </form>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>© 2026 RoyDent - Sistema de Gestión Odontológica</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

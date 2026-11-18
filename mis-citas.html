@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyDent | Mis citas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="barra-navegacion">
+        <a href="index.html" class="logo">Roy<span>Dent</span></a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="citas.html" class="activo">Citas</a>
+            <a href="historias.html">Avisos</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+        <div class="usuario">
+            <div class="avatar">R</div>
+            <span>Roy</span>
+        </div>
+    </header>
+
+    <main class="contenido">
+
+        <section class="encabezado-pagina">
+            <p class="saludo-pagina">GESTIÓN DE CITAS</p>
+            <h1>Mis citas</h1>
+            <p>Consulta las citas que has solicitado y su estado actual.</p>
+        </section>
+
+        <section class="panel-citas">
+
+<div class="titulo-panel">
+    <h2>Citas registradas</h2>
+    <p>Consulta tus citas guardadas en el sistema.</p>
+</div>
+
+<form id="formularioConsultaCitas" class="formulario-consulta">
+    <div class="campo">
+        <label for="documentoConsulta">Número de documento</label>
+        <input
+            type="text"
+            id="documentoConsulta"
+            placeholder="Ingresa tu número de documento"
+            required
+        >
+    </div>
+
+    <button type="submit" class="boton-principal">
+        Consultar mis citas
+    </button>
+</form>
+
+
+            <div class="tabla-contenedor">
+                <table class="tabla-citas">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Odontólogo</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                   <tbody id="listaMisCitas">
+    <tr>
+        <td colspan="4">Ingresa tu documento para consultar tus citas.</td>
+    </tr>
+</tbody>
+                </table>
+            </div>
+        </section>
+
+        <div class="nota-tratamientos">
+            <span>ℹ️</span>
+          <p>Consulta aquí tus citas odontológicas registradas en el sistema.</p>
+        </div>
+
+        <footer>
+            <p>© 2026 RoyDent - Sistema de Gestión Odontológica</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

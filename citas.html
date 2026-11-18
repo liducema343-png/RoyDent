@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyDent | Citas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="barra-navegacion">
+        <a href="index.html" class="logo">Roy<span>Dent</span></a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="citas.html" class="activo">Citas</a>
+            <a href="historias.html">Avisos</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+        <div class="usuario">
+            <div class="avatar">R</div>
+            <span>Roy</span>
+        </div>
+    </header>
+
+    <main class="contenido">
+
+        <section class="encabezado-pagina">
+            <p class="saludo-pagina">GESTIÓN DE CITAS</p>
+            <h1>Mis citas</h1>
+            <p>Agenda y consulta tus citas odontológicas.</p>
+        </section>
+
+        <section class="panel-citas">
+
+            <div class="titulo-panel">
+                <h2>Agendar nueva cita</h2>
+                <p>Completa los siguientes datos para solicitar tu cita.</p>
+            </div>
+
+            <form id="formularioCita">
+
+                <div class="campos-formulario">
+                    <div class="campo">
+                        <label for="documentoPaciente">Número de documento</label>
+                        <input type="text" id="documentoPaciente"
+                                placeholder="Ingresa tu número de documento" required>
+                    </div>
+
+<div class="campo">
+    <label for="odontologo">Odontólogo</label>
+    <select id="odontologo" required>
+        <option value="">Cargando odontólogos...</option>
+    </select>
+</div>
+
+                    <div class="campo">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="hora">Hora</label>
+<select id="hora" required>
+    <option value="">Seleccionar hora</option>
+    <option value="08:00:00">08:00 AM</option>
+    <option value="09:00:00">09:00 AM</option>
+    <option value="10:00:00">10:00 AM</option>
+    <option value="11:00:00">11:00 AM</option>
+    <option value="14:00:00">02:00 PM</option>
+    <option value="15:00:00">03:00 PM</option>
+    <option value="16:00:00">04:00 PM</option>
+</select>
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="motivo">Motivo de la consulta</label>
+                        <textarea id="motivo" rows="3" placeholder="Describe brevemente el motivo de tu cita"></textarea>
+                    </div>
+                </div>
+
+                <button type="submit" class="boton-principal">
+                    Solicitar cita
+                </button>
+
+            </form>
+        </section>
+
+        <section class="panel-citas listado-citas">
+            <div class="titulo-panel">
+                <h2>Historial de citas</h2>
+                <p>Consulta el estado de tus solicitudes.</p>
+            </div>
+
+            <div class="tabla-contenedor">
+                <table class="tabla-citas">
+                    <thead>
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Odontólogo</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+
+                        <tbody id="listaCitas">
+                            <tr>
+                                <td colspan="4">Registra o consulta una cita para ver el historial.</td>
+                            </tr>
+                        </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 RoyDent - Sistema de Gestión Odontológica</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

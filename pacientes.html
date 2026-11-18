@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyDent | Pacientes</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="barra-navegacion">
+        <a href="index.html" class="logo">Roy<span>Dent</span></a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="citas.html">Citas</a>
+            <a href="historias.html">Avisos</a>
+            <a href="perfil.html">Perfil</a>
+        </nav>
+
+        <div class="usuario">
+            <div class="avatar">R</div>
+            <span>Roy</span>
+        </div>
+    </header>
+
+    <main class="contenido">
+
+        <section class="encabezado-pagina">
+            <p class="saludo-pagina">GESTIÓN DE PACIENTES</p>
+            <h1>Pacientes</h1>
+            <p>Registra y consulta la información de los pacientes.</p>
+        </section>
+
+        <section class="panel-citas">
+            <div class="titulo-panel">
+                <h2>Registrar nuevo paciente</h2>
+                <p>Completa los datos para registrar un paciente.</p>
+            </div>
+
+            <form id="formularioPaciente">
+
+                <div class="campos-formulario">
+
+                    <div class="campo">
+                        <label for="tipoDocumento">Tipo de documento</label>
+                        <select id="tipoDocumento" required>
+                            <option value="">Seleccionar</option>
+                            <option value="CC">Cédula de ciudadanía</option>
+                            <option value="TI">Tarjeta de identidad</option>
+                            <option value="CE">Cédula de extranjería</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label for="numeroDocumento">Número de documento</label>
+                        <input type="text" id="numeroDocumento"
+                               placeholder="Número de documento" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="fechaNacimiento">Fecha de nacimiento</label>
+                        <input type="date" id="fechaNacimiento" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="telefonoPaciente">Teléfono</label>
+                        <input type="tel" id="telefonoPaciente"
+                               placeholder="Número de contacto">
+                    </div>
+
+                    <div class="campo campo-completo">
+                        <label for="direccionPaciente">Dirección</label>
+                        <input type="text" id="direccionPaciente"
+                               placeholder="Dirección de residencia">
+                    </div>
+
+                </div>
+
+                <button type="submit" class="boton-principal">
+                    Registrar paciente
+                </button>
+
+            </form>
+        </section>
+
+        <section class="panel-citas listado-citas">
+            <div class="titulo-panel">
+                <h2>Pacientes registrados</h2>
+                <p>Consulta los pacientes almacenados en el sistema.</p>
+            </div>
+
+            <div class="tabla-contenedor">
+                <table class="tabla-citas">
+                    <thead>
+                        <tr>
+                            <th>Documento</th>
+                            <th>Tipo</th>
+                            <th>Fecha de nacimiento</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="listaPacientes">
+                        <tr>
+                            <td colspan="4">Cargando pacientes...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 RoyDent - Sistema de Gestión Odontológica</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

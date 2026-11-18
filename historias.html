@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyDent | Historial clínico</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <header class="barra-navegacion">
+        <a href="index.html" class="logo">Roy<span>Dent</span></a>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="citas.html">Citas</a>
+            <a href="historias.html" class="activo">Avisos</a>
+            <a href="pacientes.html">Perfil</a>
+        </nav>
+
+        <div class="usuario">
+            <div class="avatar">R</div>
+            <span>Roy</span>
+        </div>
+    </header>
+
+    <main class="contenido">
+
+        <section class="encabezado-pagina">
+            <p class="saludo-pagina">INFORMACIÓN DEL PACIENTE</p>
+            <h1>Historial clínico</h1>
+            <p>Consulta tus antecedentes y registros de atención odontológica.</p>
+        </section>
+
+       
+<section class="panel-citas">
+    <div class="titulo-panel">
+        <h2>Consultar historial clínico</h2>
+        <p>Ingresa tu número de documento para consultar tu información.</p>
+    </div>
+
+    <form id="formularioHistorial">
+        <div class="campo">
+            <label for="documentoHistorial">Número de documento</label>
+            <input
+                type="text"
+                id="documentoHistorial"
+                placeholder="Ingresa tu documento"
+                required
+            >
+        </div>
+
+        <button type="submit" class="boton-principal">
+            Consultar historial
+        </button>
+    </form>
+</section>
+
+<section class="panel-citas" id="panelInformacionHistorial" hidden>
+    <div class="titulo-panel">
+        <h2>Información personal</h2>
+        <p>Datos del paciente registrado.</p>
+    </div>
+
+    <div class="datos-paciente" id="datosPacienteHistorial"></div>
+</section>
+
+<section class="panel-citas" id="panelAntecedentes" hidden>
+    <div class="titulo-panel">
+        <h2>Antecedentes médicos</h2>
+        <p>Información clínica registrada.</p>
+    </div>
+
+    <div class="antecedentes" id="datosAntecedentes"></div>
+</section>
+
+<section class="panel-citas" id="panelAtenciones" hidden>
+    <div class="titulo-panel">
+        <h2>Registros de atención</h2>
+        <p>Historial de procedimientos y consultas.</p>
+    </div>
+
+    <div id="listaAtenciones"></div>
+</section>
+
+
+        <section class="panel-citas">
+            <div class="titulo-panel">
+                <h2>Antecedentes médicos</h2>
+                <p>Información relevante para la atención odontológica.</p>
+            </div>
+
+            <div class="antecedentes">
+                <div class="antecedente">
+                    <span class="punto-antecedente"></span>
+                    <div>
+                        <strong>Alergias</strong>
+                        <p>No se registran alergias en este ejemplo.</p>
+                    </div>
+                </div>
+
+                <div class="antecedente">
+                    <span class="punto-antecedente"></span>
+                    <div>
+                        <strong>Enfermedades</strong>
+                        <p>Sin antecedentes registrados en este ejemplo.</p>
+                    </div>
+                </div>
+
+                <div class="antecedente">
+                    <span class="punto-antecedente"></span>
+                    <div>
+                        <strong>Observaciones</strong>
+                        <p>Información pendiente de validación profesional.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel-citas">
+            <div class="titulo-panel">
+                <h2>Registros de atención</h2>
+                <p>Historial de procedimientos realizados.</p>
+            </div>
+
+            <div class="registro-atencion">
+                <div class="fecha-registro">
+                    <strong>10</strong>
+                    <span>OCT 2026</span>
+                </div>
+
+                <div class="detalle-registro">
+                    <h3>Valoración odontológica</h3>
+                    <p>Consulta general y revisión del estado de salud oral.</p>
+                    <span>Profesional: Dra. Laura Gómez</span>
+                </div>
+
+                <span class="etiqueta-registro">Realizada</span>
+            </div>
+
+            <div class="registro-atencion">
+                <div class="fecha-registro">
+                    <strong>22</strong>
+                    <span>SEP 2026</span>
+                </div>
+
+                <div class="detalle-registro">
+                    <h3>Limpieza dental</h3>
+                    <p>Procedimiento de higiene y cuidado oral.</p>
+                    <span>Profesional: Dr. Carlos Ramírez</span>
+                </div>
+
+                <span class="etiqueta-registro">Realizada</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>© 2026 RoyDent - Sistema de Gestión Odontológica</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
